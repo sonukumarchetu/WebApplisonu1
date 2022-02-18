@@ -1,0 +1,17 @@
+﻿
+@model IEnumerable<WebApplisonu1.Models.Employee>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+
+}
+<h2>List of Employee</h2>
+<ol>
+    @foreach (var d in Model)
+    {
+        <li><a asp-action="Employeedetail" asp-route-id="@d.id">@d.firstname
+            +""+@d.lastname</a></li>
+    }
+</ol>
+
